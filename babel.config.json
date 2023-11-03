@@ -1,0 +1,26 @@
+{
+  "sourceType": "unambiguous",
+  "presets": [
+    "module:metro-react-native-babel-preset",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": 100,
+          "safari": 15,
+          "firefox": 91
+        }
+      }
+    ],
+    "@babel/preset-react",
+    [
+      "@babel/preset-typescript",
+      {
+        "onlyRemoveTypeImports": true,
+        "allExtensions": true,
+        "isTSX": true
+      }
+    ]
+  ],
+  "ignore": ["**/*.spec.*", "**/*.stories.*"]
+}
